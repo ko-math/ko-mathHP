@@ -9,5 +9,6 @@ body{
 
 /*header*/
 header p{
-  font-size: 20vw;
+  font-size: 5vw;
+  text-align: center;
 }
