@@ -5,8 +5,11 @@
 }
 body{
   background-image:
+    radial-gradient(#ccc 1px, transparent 1px);
+    /*
     linear-gradient(90deg, #ccc 1px, transparent 1px),
-    /*linear-gradient(0deg, #ccc 1px, transparent 1px);*/
+    linear-gradient(0deg, #ccc 1px, transparent 1px);
+  */
   background-size: 20px 20px;
   font-family: defont;
 }
