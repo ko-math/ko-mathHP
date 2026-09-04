@@ -6,3 +6,8 @@
 body{
   font-family: defont;
 }
+
+/*header*/
+header p{
+  font-size: 0.2vm;
+}
