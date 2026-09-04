@@ -19,3 +19,9 @@ header p{
   font-size: 5vw;
   text-align: center;
 }
+
+/*main*/
+main {
+  width: 90%;
+  border-radius: 10px;
+}
