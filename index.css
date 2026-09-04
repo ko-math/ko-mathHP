@@ -1,4 +1,5 @@
 @font-face{
   font-family: defont;
   src: url('font/defont.woff2') format('woff2');
+  font-display: swap;
 }
