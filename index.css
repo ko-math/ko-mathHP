@@ -23,10 +23,11 @@ header p{
 /*main*/
 main {
   margin: 0 auto;
-  background-color: #aaaaaa;
+  background-color: #eeeeee;
   opacity: 0.5;
   width: 90%;
   border-radius: 10px;
+  box-shadow: 12px 12px 2px 1px #aaaaaa;
 }
 
 main h2{
