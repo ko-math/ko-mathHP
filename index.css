@@ -24,12 +24,14 @@ header p{
 main {
   margin: 0 auto;
   background-color: #eeeeee;
-  opacity: 0.5;
+  opacity: 0.75;
   width: 90%;
   border-radius: 10px;
   box-shadow: 12px 12px 2px 1px #aaaaaa;
 }
 
 main h2{
+  /*
   border-bottom: 1px solid #ccc;
+  */
 }
