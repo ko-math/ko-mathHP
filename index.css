@@ -35,3 +35,7 @@ main h2{
   border-bottom: 1px solid #ccc;
   */
 }
+main *{
+  text-align: center;
+  margin-top: 10px;
+}
