@@ -24,6 +24,11 @@ header p{
 main {
   margin: 0 auto;
   background-color: #aaaaaa;
+  opacity: 0.5;
   width: 90%;
   border-radius: 10px;
+}
+
+main h2{
+  border-bottom: 1px solid #ccc;
 }
