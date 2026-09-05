@@ -22,7 +22,9 @@ header p{
 
 /*main*/
 main {
-  tetx-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #aaaaaa;
   width: 90%;
   border-radius: 10px;
