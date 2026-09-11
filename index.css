@@ -13,13 +13,11 @@ body{
   background-size: 20px 20px;
   font-family: defont;
 }
-
 /*header*/
 header p{
   font-size: 5vw;
   text-align: center;
 }
-
 /*main*/
 main {
   margin: 0 auto;
@@ -29,16 +27,16 @@ main {
   border-radius: 10px;
   box-shadow: 12px 12px 2px 1px #aaaaaa;
 }
-
-main h2{
-  /*
-  border-bottom: 1px solid #ccc;
-  */
-}
 main h2{
   /*text-align: center;*/
-  margin:auto 10px;
+  margin: auto 10px;
 }
 main p{
   margin: auto 10px;
+}
+
+/*footer*/
+footer{
+  background-color: #111111;
+  opacity: 0.6;
 }
