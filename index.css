@@ -38,5 +38,7 @@ main p{
 /*footer*/
 footer{
   background-color: #111111;
+  margin: 0;
+  width: 100%;
   opacity: 0.6;
 }
