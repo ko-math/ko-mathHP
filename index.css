@@ -41,5 +41,7 @@ main p{
 footer{
   background-color: #111111;
   width: 100%;
+  height: auto;
+  padding: 20px;
   opacity: 0.6;
 }
