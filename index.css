@@ -36,7 +36,11 @@ main h2{
 main p{
   margin: auto 10px;
 }
-
+a{
+  background-color: #113152;
+  color: #ffffff;
+  border-radius: 10px;
+}
 /*footer*/
 footer{
   background-color: #111111;
