@@ -39,7 +39,7 @@ main p{
 a{
   background-color: #113152;
   color: #ffffff;
-  border: none;
+  text-decoration: none;
   border-radius: 5px;
 }
 /*footer*/
