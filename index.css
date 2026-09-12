@@ -39,7 +39,8 @@ main p{
 a{
   background-color: #113152;
   color: #ffffff;
-  border-radius: 10px;
+  border: none;
+  border-radius: 5px;
 }
 /*footer*/
 footer{
