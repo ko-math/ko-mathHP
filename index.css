@@ -37,7 +37,7 @@ main p{
 }
 main a{
   color: #1131b2;
-  text-decoration-style: dotted;
+  text-decoration-style: dashed;
   opacity: 1.0;
 }
 /*footer*/
@@ -51,7 +51,7 @@ footer{
 }
 footer a{
   color: #5171b2;
-  text-decoration-style: dotted;
+  text-decoration-style: dashed;
   opacity: 1.0;
 }
 
