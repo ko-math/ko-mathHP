@@ -37,9 +37,8 @@ main p{
   margin: auto 10px;
 }
 a{
-  background-color: #113152;
-  color: #ffffff;
-  text-decoration: none;
+  color: #113152;
+  text-decoration-style: wavy;
   border-radius: 5px;
 }
 /*footer*/
