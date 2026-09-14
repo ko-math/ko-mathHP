@@ -30,16 +30,14 @@ main {
   box-shadow: 12px 12px 2px 1px #aaaaaa;
 }
 main h2{
-  /*text-align: center;*/
   margin: auto 10px;
 }
 main p{
   margin: auto 10px;
 }
-a{
-  color: #113152;
-  text-decoration-style: wavy;
-  border-radius: 5px;
+main a{
+  color: #1131b2;
+  text-decoration-style: dooted;
 }
 /*footer*/
 footer{
@@ -50,3 +48,8 @@ footer{
   margin: 20px 0px;
   opacity: 0.6;
 }
+footer a{
+  color: #5171b2;
+  text-decoration-style: dooted;
+}
+
