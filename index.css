@@ -37,7 +37,7 @@ main p{
 }
 main a{
   color: #1131b2;
-  font-weight: bold;
+  font-weight: 900;
   text-decoration-style: dashed;
   opacity: 1.0;
 }
@@ -52,7 +52,7 @@ footer{
 }
 footer a{
   color: #a1c1f2;
-  font-weight: bold;
+  font-weight: 900;
   text-decoration-style: dashed;
   opacity: 1.0;
 }
