@@ -62,7 +62,7 @@ li::before{
   content: '△';
   position: absolute;
   left: -15px;
-  top: -20px;
+  top: 0;
   display: inline-block;
   transform: rotate(90deg);
 }
