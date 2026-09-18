@@ -57,13 +57,13 @@ ul{
 }
 li{
   position: relative; 
-  left: 5px;
+  left: 10px;
   top: -20px;
 }
 li::before{
   content: '△';
   position: absolute;
-  left: -15px;
+  left: -20px;
   top: 0;
   display: inline-block;
   transform: rotate(90deg);
