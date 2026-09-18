@@ -29,6 +29,13 @@ main {
   border-radius: 10px;
   box-shadow: 12px 12px 2px 1px #aaaaaa;
 }
+main h1{
+  margin: 0 auto;
+  background-color: #111111;
+  color: #eeeeee;
+  opacity: 0.6;
+}
+
 main h2{
   margin: auto 10px;
 }
