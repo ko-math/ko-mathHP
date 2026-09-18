@@ -37,8 +37,10 @@ main h1{
   opacity: 1.0;
   border-radius: 10px;
 }
-
 main h2{
+  margin: auto 10px;
+}
+main h3{
   margin: auto 10px;
 }
 main p{
