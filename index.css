@@ -49,6 +49,9 @@ main a{
   text-decoration-style: dashed;
   opacity: 1.0;
 }
+ul{
+  list-style-type: '▶︎ ';
+}
 /*footer*/
 footer{
   background-color: #111111;
