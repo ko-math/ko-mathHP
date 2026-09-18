@@ -50,7 +50,8 @@ main a{
   opacity: 1.0;
 }
 ul{
-  list-style-type: '▶︎ ';
+  list-style-type: '△';
+  transform: rotate(90deg);
 }
 /*footer*/
 footer{
