@@ -61,7 +61,7 @@ li::before{
   content: '△';
   position: absolute;
   left: -15px;
-  top: 0;
+  top: -15px;
   display: inline-block;
   transform: rotate(90deg);
 }
