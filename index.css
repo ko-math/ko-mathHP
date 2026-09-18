@@ -78,6 +78,7 @@ footer{
   height: auto;
   margin: 0;
   opacity: 0.6;
+  overflow: hidden;
 }
 footer a{
   color: #a1c1f2;
