@@ -28,6 +28,7 @@ main {
   width: 90%;
   border-radius: 10px;
   box-shadow: 12px 12px 2px 1px #aaaaaa;
+  padding-bottom: 10px;
 }
 main h1{
   margin: 0 auto;
