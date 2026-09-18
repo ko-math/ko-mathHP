@@ -76,7 +76,7 @@ footer{
   color: #eeeeee;
   width: 100%;
   height: auto;
-  margin: 0 0 0 20px;
+  margin: 0 0 20px 0;
   opacity: 0.6;
   overflow: hidden;
 }
