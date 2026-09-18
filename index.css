@@ -50,7 +50,18 @@ main a{
   opacity: 1.0;
 }
 ul{
-  list-style-type: '△';
+  list-style-type: none;
+  padding-left: 0;
+}
+li{
+  position: relative;
+}
+li::before{
+  content: '△';
+  position: absolute;
+  left: -15px;
+  top: 0;
+  display: inline-block;
   transform: rotate(90deg);
 }
 /*footer*/
