@@ -31,6 +31,7 @@ main {
 }
 main h1{
   margin: 0 auto;
+  text-align: center;
   background-color: #111111;
   color: #eeeeee;
   opacity: 1.0;
