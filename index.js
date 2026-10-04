@@ -1,5 +1,8 @@
 //$付きはjs標準オブジェクト
 const $d = document;
+const Flags = {
+  hobbyQuiz0: true;
+};
 //lastModified
 (() => {
   const content = $d.querySelector('#lastModified');
@@ -38,13 +41,16 @@ async function decrypt(input) {
 
 const hobbyQuiz0b = $d.querySelector('#hobby-quiz-0-b');
 hobbyQuiz0b.addEventListener('click',async ()=>{
-  const i = $d.querySelector('#hobby-quiz-0-i').value;
-  const c = await decrypt(i);
-  if(c){
-    const embed = YoutubeEmbed(c,560,315);
-    $d.querySelector('#hobby-quiz-0 button').before(embed);
-  };
-},{once: true});
+  if(Flags.hobbyQuiz0){
+    const i = $d.querySelector('#hobby-quiz-0-i').value;
+    const c = await decrypt(i);
+    if(c){
+      const embed = YoutubeEmbed(c,560,315);
+      $d.querySelector('#hobby-quiz-0 button').before(embed);
+      Flags.hobbyQuiz0 = false;
+    }
+  }
+});
 
 function YoutubeEmbed(url,w,h) {
   const iframe = document.createElement('iframe');
