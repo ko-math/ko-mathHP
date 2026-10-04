@@ -74,6 +74,10 @@ li::before{
   width: 90vw;
   height: 200px;
 }
+
+iframe{
+  opacity: 1.0;
+}
 /*footer*/
 footer{
   background-color: #111111;
