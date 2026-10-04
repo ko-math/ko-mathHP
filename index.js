@@ -1,7 +1,7 @@
 //$付きはjs標準オブジェクト
 const $d = document;
 const Flags = {
-  hobbyQuiz0: true;
+  hobbyQuiz0: true,
 };
 //lastModified
 (() => {
