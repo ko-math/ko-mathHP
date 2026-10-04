@@ -8,4 +8,9 @@ const $d = document;
     lastModified: ${lastModified.getFullYear()}-${lastModified.getMonth() + 1}-${lastModified.getDate()}
   `;
 })();
-const HTML = $d.querySelector('#');
+
+const HTMLbutton = $d.querySelector('#js-HTML-b');
+HTMLbutton.addEventListener('click',()=>{
+  const HTMLInp = $d.querySelector('#js-HTML-i').value;
+  $d.querySelector('#js-HTML-o').innerHTML = HTMLInp;
+});
