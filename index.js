@@ -36,4 +36,11 @@ async function decrypt(input) {
   }
 }
 
-const HobbyQuiz0 = $d.querySelector('');
+const hobbyQuiz0b = $d.querySelector('#hobby-quiz-0-b');
+hobbyQuiz0b.addEventListener('click',async ()=>{
+  const i = $d.querySelector('#hobby-quiz-0-i').value;
+  const c = await decrypt(i);
+  if(c){
+    const area = $d.createElement('iframe');
+  }
+});
