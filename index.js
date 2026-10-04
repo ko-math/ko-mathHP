@@ -18,7 +18,7 @@ HTMLbutton.addEventListener('click',()=>{
 
 (async ()=>{
   const fail = await decrypt('none');
-  console.log(fail);
+  alert(fail);
 })
 
 
