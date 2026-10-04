@@ -40,7 +40,6 @@ const hobbyQuiz0b = $d.querySelector('#hobby-quiz-0-b');
 hobbyQuiz0b.addEventListener('click',async ()=>{
   const i = $d.querySelector('#hobby-quiz-0-i').value;
   const c = await decrypt(i);
-  window.alert(c);
   if(c){
     const area = $d.querySelector('#hobby-quiz-0');
     const iframe = document.createElement('iframe');
