@@ -8,3 +8,4 @@ const $d = document;
     lastModified: ${lastModified.getFullYear()}-${lastModified.getMonth() + 1}-${lastModified.getDate()}
   `;
 })();
+const HTML = $d.querySelector('#');
