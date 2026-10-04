@@ -66,6 +66,12 @@ li::before{
   display: inline-block;
   transform: rotate(90deg);
 }
+
+#js-HTML-i{
+  resize: vertical;
+  width: 400px;
+  height: 200px;
+}
 /*footer*/
 footer{
   background-color: #111111;
