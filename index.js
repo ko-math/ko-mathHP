@@ -40,17 +40,18 @@ const hobbyQuiz0b = $d.querySelector('#hobby-quiz-0-b');
 hobbyQuiz0b.addEventListener('click',async ()=>{
   const i = $d.querySelector('#hobby-quiz-0-i').value;
   const c = await decrypt(i);
-  if(c){
-    const area = $d.querySelector('#hobby-quiz-0');
-    const iframe = document.createElement('iframe');
-    iframe.width = 560;
-    iframe.height = 315;
-    iframe.src = 'https://www.youtube.com/embed/' + c;
-    iframe.title = 'Youtube video player';
-    iframe.frameborder = 0;
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-    iframe.referrerpolicy = 'strict-origin-when-cross-origin';
-    iframe.allowfullscreen = true;
-    area.append(iframe);
-  }
+  if(c) YoutubeEmbed(c,560,315,$d.querySelector('#hobby-quiz-0'));
 });
+
+function YoutubeEmbed(url,w,h,parent) {
+  const iframe = document.createElement('iframe');
+  iframe.width = w;
+  iframe.height = h;
+  iframe.src = 'https://www.youtube.com/embed/' + url;
+  iframe.title = 'Youtube video player';
+  iframe.frameborder = 0;
+  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+  iframe.referrerpolicy = 'strict-origin-when-cross-origin';
+  iframe.allowfullscreen = true;
+  parent.append(iframe);
+};
