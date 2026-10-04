@@ -12,5 +12,5 @@ const $d = document;
 const HTMLbutton = $d.querySelector('#js-HTML-b');
 HTMLbutton.addEventListener('click',()=>{
   const HTMLInp = $d.querySelector('#js-HTML-i').value;
-  $d.querySelector('#js-HTML-o').innerHTML = HTMLInp;
+  $d.querySelector('#js-HTML-o').srcdoc = HTMLInp;
 });
