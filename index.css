@@ -71,7 +71,7 @@ li::before{
   display: flex;
   justify-content: center;
   resize: vertical;
-  width: 400px;
+  width: 90vw;
   height: 200px;
 }
 /*footer*/
