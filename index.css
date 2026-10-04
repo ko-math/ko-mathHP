@@ -33,7 +33,6 @@ main h1{
   text-align: center;
   background-color: #111111;
   color: #eeeeee;
-  opacity: 1.0;
   border-radius: 10px;
 }
 main h2,main h3,main p,main textarea,main input{
@@ -44,7 +43,6 @@ main a{
   color: #1131b2;
   font-weight: 900;
   text-decoration-style: dashed;
-  opacity: 1.0;
 }
 
 ul{
