@@ -40,10 +40,13 @@ const hobbyQuiz0b = $d.querySelector('#hobby-quiz-0-b');
 hobbyQuiz0b.addEventListener('click',async ()=>{
   const i = $d.querySelector('#hobby-quiz-0-i').value;
   const c = await decrypt(i);
-  if(c) YoutubeEmbed(c,560,315,$d.querySelector('#hobby-quiz-0'));
+  if(c){
+    const embed = YoutubeEmbed(c,560,315);
+    $d.querySelector('#hobby-quiz-0 button').before(embed);
+  };
 });
 
-function YoutubeEmbed(url,w,h,parent) {
+function YoutubeEmbed(url,w,h) {
   const iframe = document.createElement('iframe');
   iframe.width = w;
   iframe.height = h;
@@ -53,5 +56,5 @@ function YoutubeEmbed(url,w,h,parent) {
   iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
   iframe.referrerpolicy = 'strict-origin-when-cross-origin';
   iframe.allowfullscreen = true;
-  parent.append(iframe);
+  return iframe;
 };
