@@ -42,7 +42,16 @@ hobbyQuiz0b.addEventListener('click',async ()=>{
   const c = await decrypt(i);
   window.alert(c);
   if(c){
-    const area = $d.querySelector('#hobby-quiz-0-correct');
-    area.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${i}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    const area = $d.querySelector('#hobby-quiz-0');
+    const iframe = document.createElement('iframe');
+    iframe.width = 560;
+    iframe.height = 315;
+    iframe.src = 'https://www.youtube.com/embed/' + c;
+    iframe.title = 'Youtube video player';
+    iframe.frameborder = 0;
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerpolicy = 'strict-origin-when-cross-origin';
+    iframe.allowfullscreen = true;
+    area.append(iframe);
   }
 });
