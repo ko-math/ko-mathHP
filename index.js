@@ -44,7 +44,7 @@ hobbyQuiz0b.addEventListener('click',async ()=>{
     const embed = YoutubeEmbed(c,560,315);
     $d.querySelector('#hobby-quiz-0 button').before(embed);
   };
-});
+},{once: true;});
 
 function YoutubeEmbed(url,w,h) {
   const iframe = document.createElement('iframe');
