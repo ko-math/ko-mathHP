@@ -39,8 +39,8 @@ async function decrypt(input) {
 const hobbyQuiz0b = $d.querySelector('#hobby-quiz-0-b');
 hobbyQuiz0b.addEventListener('click',async ()=>{
   const i = $d.querySelector('#hobby-quiz-0-i').value;
-  window.alert(i);
   const c = await decrypt(i);
+  window.alert(c);
   if(c){
     const area = $d.querySelector('#hobby-quiz-0-correct');
     area.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${i}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
