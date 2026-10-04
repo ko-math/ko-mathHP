@@ -23,7 +23,7 @@ header p{
 /*main*/
 main {
   margin: 0 auto;
-  background-color: rgb(238 238 238 / 60%);
+  background-color: rgb(238 238 238 / 0.6);
   width: 90%;
   border-radius: 10px;
   box-shadow: 12px 12px 2px 1px #aaaaaa;
@@ -33,6 +33,7 @@ main h1{
   text-align: center;
   background-color: #111111;
   color: #eeeeee;
+  opacity: 0.6;
   border-radius: 10px;
 }
 main h2,main h3,main p,main textarea,main input{
