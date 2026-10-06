@@ -21,6 +21,7 @@ HTMLbutton.addEventListener('click',()=>{
 const musics = ['delete'];
 addMusic('ブリキノダンス','日向電工','6EuR6FuOXXw');
 addMusic('春嵐','john','pUH9vCsvq08');
+addMusic('アンノウン・マザーグース','wowaka','P_CSdxSGfaA');
 musics.shift();
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
