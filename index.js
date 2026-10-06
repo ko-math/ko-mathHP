@@ -38,7 +38,7 @@ addMusic('愛して愛して愛して','Kikuo','NTrm_idbhUk');
 //Foreign country 
 addMusic('Shape of you','Ed Sheeran','');
 addMusic('September','Earth Wind & Fire','');
-addMsuic('Runaway Baby','Bruno Mars','');
+addMusic('Runaway Baby','Bruno Mars','');
 //Hol
 
 const musicb = $d.querySelector('#js-music-b');
