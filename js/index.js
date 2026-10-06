@@ -31,14 +31,6 @@ musicb.addEventListener('click',()=>{
   const p = $d.querySelector('#js-music-desc');
   p.textContent = `曲名:${music.title}/${music.singer} ジャンル:${music.genre}`;
 });
-function addMusic(title,singer,genre,query){
-  musics.push({
-    title: title,
-    singer: singer,
-    genre: genre,
-    url: 'https://www.youtube.com/embed/' + query,
-  });
-}
 //hobby quizes.
 const encryptedDataHex = '990bc3d7ea3fb09f773e61cfbeb3f2d9023c897f853a82d9aac12881373b42128349f9e7a094f4b5aa3278b49342959e1806104f827a254fd9ad01a10eaeb8';
 const ivHex = '9db1d618170cfb922b37410d';
