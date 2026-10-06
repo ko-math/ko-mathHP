@@ -22,14 +22,23 @@ addMusic('Shape of you','Ed Sheeran','洋楽','');
 addMusic('September','Earth Wind & Fire','洋楽','');
 addMusic('Runaway Baby','Bruno Mars','洋楽','');
 addMusic('STAY','Justin Bieber , The Kid LAROI','洋楽','');
-//Hol
+//Hololive
 addMusic('ソワレ','星街すいせい','Hololive','');
 addMusic('ビビデバ','星街すいせい','Hololive','');
 addMusic('GUM&DROP','星街すいせい','Hololive','');
 addMusic('Caramel Pain','星街すいせい','Hololive','');
 addMusic('KINGWORLD','白上フブキ','Hololive','');
 addMusic('YOU&合図','音乃瀬奏','Hololive','');
-//gen
+//j-pop
 addMusic('シル・ヴ・プレジデント','P丸様。','J-pop','');
+//function
+function addMusic(title,singer,genre,query){
+  musics.push({
+    title: title,
+    singer: singer,
+    genre: genre,
+    url: 'https://www.youtube.com/embed/' + query,
+  });
+}
 
 export musics;
