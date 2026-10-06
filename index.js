@@ -17,7 +17,17 @@ HTMLbutton.addEventListener('click',()=>{
   const HTMLInp = $d.querySelector('#js-HTML-i').value;
   $d.querySelector('#js-HTML-o').srcdoc = HTMLInp;
 });
+//music
+const musics = [];
 
+const musicb = $d.querySelector('#js-music-b');
+musicb.addEventListener('click',()=>{
+  
+});
+function addMusic(name,singer,url){
+  YoutubeEmbed(url,560,315);
+}
+//hobby quizes.
 const encryptedDataHex = '990bc3d7ea3fb09f773e61cfbeb3f2d9023c897f853a82d9aac12881373b42128349f9e7a094f4b5aa3278b49342959e1806104f827a254fd9ad01a10eaeb8';
 const ivHex = '9db1d618170cfb922b37410d';
 
@@ -45,18 +55,18 @@ hobbyQuiz0b.addEventListener('click',async ()=>{
     const i = $d.querySelector('#hobby-quiz-0-i').value;
     const c = await decrypt(i);
     if(c){
-      const embed = YoutubeEmbed(c,560,315);
+      const embed = YoutubeEmbed('https://www.youtube.com/embed/' + c,560,315);
       $d.querySelector('#hobby-quiz-0 button').before(embed);
       Flags.hobbyQuiz0 = false;
     }
   }
 });
-
+//global functions
 function YoutubeEmbed(url,w,h) {
   const iframe = document.createElement('iframe');
   iframe.width = w;
   iframe.height = h;
-  iframe.src = 'https://www.youtube.com/embed/' + url;
+  iframe.src = url;
   iframe.title = 'Youtube video player';
   iframe.frameborder = 0;
   iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
