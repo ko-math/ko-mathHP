@@ -18,8 +18,9 @@ HTMLbutton.addEventListener('click',()=>{
   $d.querySelector('#js-HTML-o').srcdoc = HTMLInp;
 });
 //music
-const musics = [];
+const musics = ['delete'];
 addMusic('ブリキノダンス','日向電工','https://www.youtube.com/embed/6EuR6FuOXXw');
+musics.shift();
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
   alert(1);
