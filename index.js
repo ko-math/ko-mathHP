@@ -25,7 +25,6 @@ addMusic('アンノウン・マザーグース','wowaka','P_CSdxSGfaA');
 musics.shift();
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
-  alert(1);
   const music = musics[Math.floor(Math.random() * musics.length)];
   const i = $d.querySelector('#js-music-iframe');
   if(i) i.remove();
@@ -39,7 +38,6 @@ function addMusic(title,singer,query){
     singer: singer,
     url: 'https://www.youtube.com/embed/' + query,
   });
-  alert('addmusic:' + musics);
 }
 //hobby quizes.
 const encryptedDataHex = '990bc3d7ea3fb09f773e61cfbeb3f2d9023c897f853a82d9aac12881373b42128349f9e7a094f4b5aa3278b49342959e1806104f827a254fd9ad01a10eaeb8';
