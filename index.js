@@ -23,7 +23,7 @@ addMusic('ブリキノダンス','日向電工','https://www.youtube.com/embed/6
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
   alert(1);
-  const music = musics[Math.random() * musics.length];
+  const music = musics[Math.random() * (musics.length - 1)];
   const i = document.querySelector('#js-music-iframe');
   if(i) i.remove();
   const o = document.querySelector('#js-music-o');
