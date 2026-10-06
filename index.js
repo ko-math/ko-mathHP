@@ -39,7 +39,16 @@ addMusic('愛して愛して愛して','Kikuo','NTrm_idbhUk');
 addMusic('Shape of you','Ed Sheeran','');
 addMusic('September','Earth Wind & Fire','');
 addMusic('Runaway Baby','Bruno Mars','');
+addMusic('STAY','Justin Bieber , The Kid LAROI','');
 //Hol
+addMusic('ソワレ','星街すいせい','');
+addMusic('ビビデバ','星街すいせい','');
+addMusic('GUM&DROP','星街すいせい','');
+addMusic('Caramel Pain','星街すいせい','');
+addMusic('KINGWORLD','白上フブキ','');
+addMusic('YOU&合図','音乃瀬奏','');
+//gen
+addMusic('シル・ヴ・プレジデント','P丸様。','');
 
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
