@@ -18,12 +18,21 @@ HTMLbutton.addEventListener('click',()=>{
   $d.querySelector('#js-HTML-o').srcdoc = HTMLInp;
 });
 //music
-const musics = ['delete'];
+const musics = [];
+//Vocaloid
+addMusic('ルスバンウェイブ(ドライブ)','日向電工','');
 addMusic('ブリキノダンス','日向電工','6EuR6FuOXXw');
+addMusic('スパークガールシンドローム','日向電工','');
 addMusic('春嵐','john','pUH9vCsvq08');
-addMusic('アンノウン・マザーグース','wowaka','P_CSdxSGfaA');
 addMusic('ワールズエンド・ダンスホール','wowaka','ZB75e7vzX0I');
-musics.shift();
+addMusic('ブレインロット','東京真中','');
+addMusic('脳漿炸裂ガール','れるりり','Ey_NHZNYTeE');
+addMusic('マーシャル・マキシマイザー','柊マグネタイト','');
+addMusic('或世界消失','柊マグネタイト','');
+addMusic('終焉逃避行','柊マグネタイト','');
+addMusic('IMAWANOKIWA','いよわ','');
+//Foreign country 
+addMusic('Shape of you','Ed Sheeran','');
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
   const music = musics[Math.floor(Math.random() * musics.length)];
