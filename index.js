@@ -20,35 +20,37 @@ HTMLbutton.addEventListener('click',()=>{
 //music
 const musics = [];
 //Vocaloid
-addMusic('ルスバンウェイブ(ドライブ)','日向電工','');
-addMusic('ブリキノダンス','日向電工','6EuR6FuOXXw');
-addMusic('スパークガールシンドローム','日向電工','');
-addMusic('春嵐','john','pUH9vCsvq08');
-addMusic('ワールズエンド・ダンスホール','wowaka','ZB75e7vzX0I');
-addMusic('ブレインロット','東京真中','');
-addMusic('脳漿炸裂ガール','れるりり','Ey_NHZNYTeE');
-addMusic('マーシャル・マキシマイザー','柊マグネタイト','');
-addMusic('或世界消失','柊マグネタイト','');
-addMusic('終焉逃避行','柊マグネタイト','');
-addMusic('IMAWANOKIWA','いよわ','');
-addMusic('エンヴィーベイビー','Kanaria','dgS6HvEohsw');
-addMusic('KING','Kanaria','cm-l2h6GB8Q');
-addMusic('少女レイ','みきとP','JW3N-HvU0MA');
-addMusic('愛して愛して愛して','Kikuo','NTrm_idbhUk');
+addMusic('ルスバンウェイブ(ドライブ)','日向電工','ボカロ','');
+addMusic('ブリキノダンス','日向電工','ボカロ','6EuR6FuOXXw');
+addMusic('スパークガールシンドローム','日向電工','ボカロ','');
+addMusic('春嵐','john','ボカロ','pUH9vCsvq08');
+addMusic('ワールズエンド・ダンスホール','wowaka','ボカロ','ZB75e7vzX0I');
+addMusic('ブレインロット','東京真中','ボカロ','');
+addMusic('脳漿炸裂ガール','れるりり','ボカロ','Ey_NHZNYTeE');
+addMusic('マーシャル・マキシマイザー','柊マグネタイト','ボカロ','');
+addMusic('或世界消失','柊マグネタイト','ボカロ','');
+addMusic('終焉逃避行','柊マグネタイト','ボカロ','');
+addMusic('IMAWANOKIWA','いよわ','ボカロ','');
+addMusic('エンヴィーベイビー','Kanaria','ボカロ','dgS6HvEohsw');
+addMusic('KING','Kanaria','ボカロ','cm-l2h6GB8Q');
+addMusic('少女レイ','みきとP','ボカロ','JW3N-HvU0MA');
+addMusic('愛して愛して愛して','Kikuo','ボカロ','NTrm_idbhUk');
+addMusic('人マニア','原口沙輔','ボカロ','');
+addMusic('イガク','原口沙輔','ボカロ','');
 //Foreign country 
-addMusic('Shape of you','Ed Sheeran','');
-addMusic('September','Earth Wind & Fire','');
-addMusic('Runaway Baby','Bruno Mars','');
-addMusic('STAY','Justin Bieber , The Kid LAROI','');
+addMusic('Shape of you','Ed Sheeran','洋楽','');
+addMusic('September','Earth Wind & Fire','洋楽','');
+addMusic('Runaway Baby','Bruno Mars','洋楽','');
+addMusic('STAY','Justin Bieber , The Kid LAROI','洋楽','');
 //Hol
-addMusic('ソワレ','星街すいせい','');
-addMusic('ビビデバ','星街すいせい','');
-addMusic('GUM&DROP','星街すいせい','');
-addMusic('Caramel Pain','星街すいせい','');
-addMusic('KINGWORLD','白上フブキ','');
-addMusic('YOU&合図','音乃瀬奏','');
+addMusic('ソワレ','星街すいせい','Hololive','');
+addMusic('ビビデバ','星街すいせい','Hololive','');
+addMusic('GUM&DROP','星街すいせい','Hololive','');
+addMusic('Caramel Pain','星街すいせい','Hololive','');
+addMusic('KINGWORLD','白上フブキ','Hololive','');
+addMusic('YOU&合図','音乃瀬奏','Hololive','');
 //gen
-addMusic('シル・ヴ・プレジデント','P丸様。','');
+addMusic('シル・ヴ・プレジデント','P丸様。','J-pop','');
 
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
@@ -59,11 +61,14 @@ musicb.addEventListener('click',()=>{
   const iframe = YoutubeEmbed(music.url,560,315);
   iframe.id = 'js-music-iframe';
   o.append(iframe);
+  const p = $d.querySelector('#js-music-desc');
+  p.textContent = `曲名:${music.title}/${music.singer} ジャンル:${music.genre}`;
 });
-function addMusic(title,singer,query){
+function addMusic(title,singer,genre,query){
   musics.push({
     title: title,
     singer: singer,
+    genre: genre,
     url: 'https://www.youtube.com/embed/' + query,
   });
 }
