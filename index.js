@@ -33,6 +33,8 @@ addMusic('終焉逃避行','柊マグネタイト','');
 addMusic('IMAWANOKIWA','いよわ','');
 addMusic('エンヴィーベイビー','Kanaria','dgS6HvEohsw');
 addMusic('KING','Kanaria','cm-l2h6GB8Q');
+addMusic('少女レイ','みきとP','JW3N-HvU0MA');
+addMusic('愛して愛して愛して','Kikuo','NTrm_idbhUk');
 //Foreign country 
 addMusic('Shape of you','Ed Sheeran','');
 addMusic('September','Earth Wind & Fire','');
