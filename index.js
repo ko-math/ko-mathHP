@@ -25,9 +25,10 @@ const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
   alert(1);
   const music = musics[Math.floor(Math.random() * musics.length)];
-  const i = document.querySelector('#js-music-iframe');
+  const i = $d.querySelector('#js-music-iframe');
   if(i) i.remove();
-  const o = document.querySelector('#js-music-o');
+  const o = $d.querySelector('#js-music-o');
+  o.id = 'js-music-iframe';
   o.append(YoutubeEmbed(music.url,560,315));
 });
 function addMusic(title,singer,url){
