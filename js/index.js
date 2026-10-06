@@ -1,8 +1,5 @@
 //$付きはjs標準オブジェクト
 const $d = document;
-const Flags = {
-  hobbyQuiz0: true,
-};
 //lastModified
 (() => {
   const content = $d.querySelector('#lastModified');
@@ -18,7 +15,7 @@ HTMLbutton.addEventListener('click',()=>{
   $d.querySelector('#js-HTML-o').srcdoc = HTMLInp;
 });
 //music
-import {music} from '/js/music/';
+import { musics } from '/js/music/';
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
   const music = musics[Math.floor(Math.random() * musics.length)];
@@ -31,7 +28,10 @@ musicb.addEventListener('click',()=>{
   const p = $d.querySelector('#js-music-desc');
   p.textContent = `曲名:${music.title}/${music.singer} ジャンル:${music.genre}`;
 });
-//hobby quizes.
+//hobby quizes
+const Flags = {
+  hobbyQuiz0: true,
+};
 const encryptedDataHex = '990bc3d7ea3fb09f773e61cfbeb3f2d9023c897f853a82d9aac12881373b42128349f9e7a094f4b5aa3278b49342959e1806104f827a254fd9ad01a10eaeb8';
 const ivHex = '9db1d618170cfb922b37410d';
 
