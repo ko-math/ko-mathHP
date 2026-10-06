@@ -41,4 +41,4 @@ function addMusic(title,singer,genre,query){
   });
 }
 
-export musics;
+export { musics };
