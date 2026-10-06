@@ -19,7 +19,7 @@ HTMLbutton.addEventListener('click',()=>{
 });
 //music
 const musics = ['delete'];
-addMusic('ブリキノダンス','日向電工','https://www.youtube.com/embed/6EuR6FuOXXw');
+addMusic('ブリキノダンス','日向電工','6EuR6FuOXXw');
 musics.shift();
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
@@ -31,11 +31,11 @@ musicb.addEventListener('click',()=>{
   o.id = 'js-music-iframe';
   o.append(YoutubeEmbed(music.url,560,315));
 });
-function addMusic(title,singer,url){
+function addMusic(title,singer,query){
   musics.push({
     title: title,
     singer: singer,
-    url: url,
+    url: 'https://www.youtube.com/embed/' + query,
   });
   alert('addmusic:' + musics);
 }
