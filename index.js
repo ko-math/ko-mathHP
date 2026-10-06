@@ -19,10 +19,14 @@ HTMLbutton.addEventListener('click',()=>{
 });
 //music
 const musics = [];
-
+addMusic('ブリキノダンス','日向電工','https://www.youtube.com/embed/6EuR6FuOXXw');
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
-  
+  const music = musics[Math.random() * musics.length];
+  const i = document.querySelector('#js-music-iframe');
+  if(i) i.remove();
+  const o = document.querySelector('#js-music-o');
+  o.append(YoutubeEmbed(music.url,560,315));
 });
 function addMusic(title,singer,url){
   musics.push({
