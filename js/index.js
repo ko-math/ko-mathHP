@@ -1,6 +1,6 @@
 const $d = document; //$付きはjs標準オブジェクト
 //import
-import { musics } from '/js/music/'; //musics
+import { musics } from '/js/music.js'; //musics
 
 //lastModified
 (() => {
