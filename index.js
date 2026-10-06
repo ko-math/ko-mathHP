@@ -22,6 +22,7 @@ const musics = ['delete'];
 addMusic('ブリキノダンス','日向電工','6EuR6FuOXXw');
 addMusic('春嵐','john','pUH9vCsvq08');
 addMusic('アンノウン・マザーグース','wowaka','P_CSdxSGfaA');
+addMusic('ワールズエンド・ダンスホール','wowaka','ZB75e7vzX0I');
 musics.shift();
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
