@@ -73,7 +73,7 @@ function YoutubeEmbed(url,w,h) {
   iframe.height = h;
   iframe.src = url;
   iframe.title = 'Youtube video player';
-  iframe.frameborder = 0;
+  iframe.frameBorder = 0;
   iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
   iframe.referrerpolicy = 'strict-origin-when-cross-origin';
   iframe.allowfullscreen = true;
