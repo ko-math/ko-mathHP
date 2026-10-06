@@ -31,8 +31,14 @@ addMusic('マーシャル・マキシマイザー','柊マグネタイト','');
 addMusic('或世界消失','柊マグネタイト','');
 addMusic('終焉逃避行','柊マグネタイト','');
 addMusic('IMAWANOKIWA','いよわ','');
+addMusic('エンヴィーベイビー','Kanaria','dgS6HvEohsw');
+addMusic('KING','Kanaria','cm-l2h6GB8Q');
 //Foreign country 
 addMusic('Shape of you','Ed Sheeran','');
+addMusic('September','Earth Wind & Fire','');
+addMsuic('Runaway Baby','Bruno Mars','');
+//Hol
+
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
   const music = musics[Math.floor(Math.random() * musics.length)];
