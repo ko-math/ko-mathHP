@@ -1,5 +1,7 @@
-//$付きはjs標準オブジェクト
-const $d = document;
+const $d = document; //$付きはjs標準オブジェクト
+//import
+import { musics } from '/js/music/'; //musics
+
 //lastModified
 (() => {
   const content = $d.querySelector('#lastModified');
@@ -15,7 +17,6 @@ HTMLbutton.addEventListener('click',()=>{
   $d.querySelector('#js-HTML-o').srcdoc = HTMLInp;
 });
 //music
-import { musics } from '/js/music/';
 const musicb = $d.querySelector('#js-music-b');
 musicb.addEventListener('click',()=>{
   const music = musics[Math.floor(Math.random() * musics.length)];
