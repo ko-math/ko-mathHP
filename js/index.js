@@ -78,6 +78,7 @@ function formAddRadio(value,id){
   input.id = id;
   const label = $d.createElement('label');
   label.for = id;
+  label.textContent = value;
 
   par.append(input);
   par.append(label);
