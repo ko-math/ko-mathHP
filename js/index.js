@@ -76,7 +76,7 @@ try{
   const form = $d.querySelectorAll('#mail-form input');
   form.forEach((e)=>{
     e.addEventListner('change',()=>{
-      const s = $d.querySelector('#mail-addres');
+      const s = $d.querySelector('#mail-address');
       s.innerHTML = `
         <a href="${contactUrls[e.value]}" target="_blank">${e.value}</a>
       `;
@@ -87,9 +87,8 @@ try{
 }
 function formAddRadio(value,id,url){
   contactUrls.push({
-    value: url;
+    value: url,
   });
-  
   const par = $d.querySelector('#mail-form');
   const input = $d.createElement('input');
   input.type = 'radio';
