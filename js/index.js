@@ -69,7 +69,8 @@ hobbyQuiz0b.addEventListener('click',async ()=>{
 //forms
 
 funtion formAddRadio(name,value){
-  const par = $d.querySelector('#mail-addres');
+  const par = $d.querySelector('#mail-form');
+  //name = 'mail-radio';
 }
 
 //global functions
