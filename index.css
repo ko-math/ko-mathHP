@@ -69,7 +69,7 @@ li::before{
 }
 
 #js-HTML-i{
-  resize: vertical;
+  margin: 20px;
   width: 70vw;
   height: 200px;
 }
