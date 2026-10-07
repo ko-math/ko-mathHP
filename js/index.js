@@ -71,6 +71,8 @@ formAddRadio('Scratch','contact-scratch');
 formAddRadio('Discord','contact-discord');
 formAddRadio('Gmail','contact-gmail');
 
+const form = $d.querySelector('#')
+
 function formAddRadio(value,id){
   const par = $d.querySelector('#mail-form');
   const input = $d.createElement('input');
