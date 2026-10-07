@@ -75,7 +75,7 @@ formAddRadio('Gmail','contact-gmail','mailto:komathtech@gmail.com');
 try{
   const form = $d.querySelectorAll('#mail-form input');
   form.forEach((e)=>{
-    e.addEventListner('change',()=>{
+    e.addEventListener('change',()=>{
       const s = $d.querySelector('#mail-address');
       s.innerHTML = `
         <a href="${contactUrls[e.value]}" target="_blank">${e.value}</a>
