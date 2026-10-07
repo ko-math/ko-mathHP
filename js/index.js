@@ -67,13 +67,29 @@ hobbyQuiz0b.addEventListener('click',async ()=>{
   }
 });
 //forms
-formAddRadio('Scratch','contact-scratch');
-formAddRadio('Discord','contact-discord');
-formAddRadio('Gmail','contact-gmail');
+const contactUrls = [];
+formAddRadio('Scratch','contact-scratch','https://scratch.mit.edu/users/ko-math');
+formAddRadio('Discord','contact-discord','');
+formAddRadio('Gmail','contact-gmail','mailto:komathtech@gmail.com');
 
-const form = $d.querySelector('#')
-
-function formAddRadio(value,id){
+try{
+  const form = $d.querySelectorAll('#mail-form input');
+  form.forEach((e)=>{
+    e.addEventListner('change',()=>{
+      const s = $d.querySelector('#mail-addres');
+      s.innerHTML = `
+        <a href="${contactUrls[e.value]}" target="_blank">${e.value}</a>
+      `;
+    });
+  });
+} catch(e) {
+  alert(e.message);
+}
+function formAddRadio(value,id,url){
+  contactUrls.push({
+    value: url;
+  });
+  
   const par = $d.querySelector('#mail-form');
   const input = $d.createElement('input');
   input.type = 'radio';
