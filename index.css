@@ -69,10 +69,8 @@ li::before{
 }
 
 #js-HTML-i{
-  display: flex;
-  justify-content: center;
   resize: vertical;
-  width: 90vw;
+  width: 70vw;
   height: 200px;
 }
 
