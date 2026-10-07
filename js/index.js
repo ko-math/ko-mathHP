@@ -66,6 +66,12 @@ hobbyQuiz0b.addEventListener('click',async ()=>{
     }
   }
 });
+//forms
+
+funtion formAddRadio(name,value){
+  const par = $d.querySelector('#mail-addres');
+}
+
 //global functions
 function YoutubeEmbed(url,w,h) {
   const iframe = document.createElement('iframe');
