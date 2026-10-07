@@ -7,7 +7,7 @@ addMusic('春嵐','john','ボカロ','pUH9vCsvq08');
 addMusic('ワールズエンド・ダンスホール','wowaka','ボカロ','ZB75e7vzX0I');
 addMusic('ブレインロット','東京真中','ボカロ','');
 addMusic('脳漿炸裂ガール','れるりり','ボカロ','Ey_NHZNYTeE');
-addMusic('マーシャル・マキシマイザー','柊マグネタイト','ボカロ','');
+addMusic('マーシャル・マキシマイザー','柊マグネタイト','ボカロ','jMKPYg0uhCI');
 addMusic('或世界消失','柊マグネタイト','ボカロ','');
 addMusic('終焉逃避行','柊マグネタイト','ボカロ','');
 addMusic('IMAWANOKIWA','いよわ','ボカロ','');
