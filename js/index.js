@@ -67,7 +67,9 @@ hobbyQuiz0b.addEventListener('click',async ()=>{
   }
 });
 //forms
-formAddRadio('scratch','contact-scratch');
+formAddRadio('Scratch','contact-scratch');
+formAddRadio('Discord','contact-discord');
+formAddRadio('Gmail','contact-gmail');
 
 function formAddRadio(value,id){
   const par = $d.querySelector('#mail-form');
