@@ -69,7 +69,7 @@ hobbyQuiz0b.addEventListener('click',async ()=>{
 //forms
 const contactUrls = {};
 formAddRadio('Scratch','contact-scratch','https://scratch.mit.edu/users/ko-math');
-formAddRadio('Discord','contact-discord','');
+formAddRadio('Discord','contact-discord','https://discordapp.com/users/1411260981614739456');
 formAddRadio('Gmail','contact-gmail','mailto:komathtech@gmail.com');
 
 const form = $d.querySelectorAll('#mail-form input');
