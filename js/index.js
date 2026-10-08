@@ -76,7 +76,6 @@ const form = $d.querySelectorAll('#mail-form input');
 form.forEach((e)=>{
   e.addEventListener('change',()=>{
     const s = $d.querySelector('#mail-address');
-    alert(e.value);
     alert(contactUrls);
     s.innerHTML = `
       <a href="${contactUrls[e.value]}" target="_blank">${e.value}</a>
