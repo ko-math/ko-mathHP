@@ -72,21 +72,19 @@ formAddRadio('Scratch','contact-scratch','https://scratch.mit.edu/users/ko-math'
 formAddRadio('Discord','contact-discord','');
 formAddRadio('Gmail','contact-gmail','mailto:komathtech@gmail.com');
 
-try{
-  const form = $d.querySelectorAll('#mail-form input');
-  form.forEach((e)=>{
-    e.addEventListener('change',()=>{
-      const s = $d.querySelector('#mail-address');
-      s.innerHTML = `
-        <a href="${contactUrls[e.value]}" target="_blank">${e.value}</a>
-      `;
-    });
+const form = $d.querySelectorAll('#mail-form input');
+form.forEach((e)=>{
+  e.addEventListener('change',()=>{
+    const s = $d.querySelector('#mail-address');
+    alert(e.value);
+    alert(contactUrls);
+    s.innerHTML = `
+      <a href="${contactUrls[e.value]}" target="_blank">${e.value}</a>
+    `;
   });
-} catch(e) {
-  alert(e.message);
-}
+});
 function formAddRadio(value,id,url){
-  contactUrls.value = {
+  contactUrls[value] = {
     value: url,
   };
   const par = $d.querySelector('#mail-form');
