@@ -67,7 +67,7 @@ hobbyQuiz0b.addEventListener('click',async ()=>{
   }
 });
 //forms
-const contactUrls = [];
+const contactUrls = {};
 formAddRadio('Scratch','contact-scratch','https://scratch.mit.edu/users/ko-math');
 formAddRadio('Discord','contact-discord','');
 formAddRadio('Gmail','contact-gmail','mailto:komathtech@gmail.com');
@@ -86,9 +86,9 @@ try{
   alert(e.message);
 }
 function formAddRadio(value,id,url){
-  contactUrls.push({
+  contactUrls.value = {
     value: url,
-  });
+  };
   const par = $d.querySelector('#mail-form');
   const input = $d.createElement('input');
   input.type = 'radio';
