@@ -77,7 +77,7 @@ form.forEach((e)=>{
   e.addEventListener('change',()=>{
     const s = $d.querySelector('#mail-address');
     s.innerHTML = `
-      <a href="${contactUrls[e.value]}" target="_blank">${e.value}</a>
+      <p>お問い合わせリンク:<a href="${contactUrls[e.value]}" target="_blank">${e.value}</a></p>
     `;
   });
 });
