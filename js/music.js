@@ -24,6 +24,10 @@ addMusic('September','Earth Wind & Fire','洋楽','');
 addMusic('Runaway Baby','Bruno Mars','洋楽','');
 addMusic('STAY','Justin Bieber , The Kid LAROI','洋楽','');
 addMusic('Virtual Insanity','Jamiroquai','洋楽','');
+addMusic('High Hopes','Panic! at the Disco','洋楽','');
+addMusic('Biliever','','洋楽','');
+addMusic('Fight Song','','洋楽','');
+addMusic('Life goes on','','洋楽','');
 //Hololive
 addMusic('ソワレ','星街すいせい','Hololive','');
 addMusic('ビビデバ','星街すいせい','Hololive','');
