@@ -84,9 +84,7 @@ form.forEach((e)=>{
   });
 });
 function formAddRadio(value,id,url){
-  contactUrls[value] = {
-    value: url,
-  };
+  contactUrls[value] = url;
   const par = $d.querySelector('#mail-form');
   const input = $d.createElement('input');
   input.type = 'radio';
