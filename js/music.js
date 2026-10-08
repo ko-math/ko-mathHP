@@ -19,7 +19,7 @@ addMusic('愛して愛して愛して','Kikuo','ボカロ','NTrm_idbhUk');
 addMusic('人マニア','原口沙輔','ボカロ','HTxwOxFt5d4');
 addMusic('イガク','原口沙輔','ボカロ','F38EuG2dAyM');
 //Foreign country 
-addMusic('Shape of you','Ed Sheeran','洋楽','');
+addMusic('Shape of you','Ed Sheeran','洋楽','JGwWNGJdvx8');
 addMusic('September','Earth Wind & Fire','洋楽','');
 addMusic('Runaway Baby','Bruno Mars','洋楽','');
 addMusic('STAY','Justin Bieber , The Kid LAROI','洋楽','');
@@ -35,6 +35,8 @@ addMusic('GUM&DROP','星街すいせい','Hololive','');
 addMusic('Caramel Pain','星街すいせい','Hololive','');
 addMusic('KINGWORLD','白上フブキ','Hololive','');
 addMusic('YOU&合図','音乃瀬奏','Hololive','');
+//界隈曲
+addMusic('ᅠ','Or_Should_I','界隈','Wqswt2Sl9KM');
 //j-pop
 addMusic('シル・ヴ・プレジデント','P丸様。','J-pop','');
 //function
