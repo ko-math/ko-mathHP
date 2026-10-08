@@ -36,7 +36,7 @@ addMusic('Caramel Pain','星街すいせい','Hololive','');
 addMusic('KINGWORLD','白上フブキ','Hololive','');
 addMusic('YOU&合図','音乃瀬奏','Hololive','');
 //界隈曲
-addMusic('ᅠ','Or_Should_I','界隈','Wqswt2Sl9KM');
+addMusic('ᅠ ','Or_Should_I','界隈','Wqswt2Sl9KM');
 //j-pop
 addMusic('シル・ヴ・プレジデント','P丸様。','J-pop','');
 //function
