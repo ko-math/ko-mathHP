@@ -18,6 +18,7 @@ addMusic('少女レイ','みきとP','ボカロ','JW3N-HvU0MA');
 addMusic('愛して愛して愛して','Kikuo','ボカロ','NTrm_idbhUk');
 addMusic('人マニア','原口沙輔','ボカロ','HTxwOxFt5d4');
 addMusic('イガク','原口沙輔','ボカロ','F38EuG2dAyM');
+addMusic('ループザルーム','ルシノ','ボカロ','icBDYkfxpMs');
 //Foreign country 
 addMusic('Shape of you','Ed Sheeran','洋楽','JGwWNGJdvx8');
 addMusic('September','Earth Wind & Fire','洋楽','');
