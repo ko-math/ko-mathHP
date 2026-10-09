@@ -121,8 +121,9 @@ function formAddRadio(value,id,url,origin){
 }
 
 //LinkEx
-function addLink(url){
-  fetch(url);
+async function addLink(url){
+  const res = await fetch(url);
+  const html = await res.text();
 }
 
 //global functions
