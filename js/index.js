@@ -120,6 +120,9 @@ function formAddRadio(value,id,url,origin){
   //name = 'mail-radio';
 }
 
+//LinkEx
+function addLink(url,){}
+
 //global functions
 function YoutubeEmbed(url,w,h) {
   const iframe = document.createElement('iframe');
