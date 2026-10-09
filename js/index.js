@@ -86,6 +86,15 @@ form.forEach((e)=>{
         `;
         break;
       case 'FORM':
+        s.innerHTML = `
+          <form>
+            <fieldset>
+              <legend>お問い合わせ(ブラウザ)</legend>
+            </fieldset>
+
+
+          </form>
+        `;
         break;
     }
   });
