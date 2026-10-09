@@ -68,21 +68,34 @@ hobbyQuiz0b.addEventListener('click',async ()=>{
 });
 //forms
 const contactUrls = {};
-formAddRadio('Scratch','contact-scratch','https://scratch.mit.edu/users/ko-math');
-formAddRadio('Discord','contact-discord','https://discordapp.com/users/1411260981614739456');
-formAddRadio('Gmail','contact-gmail','mailto:komathtech@gmail.com');
+formAddRadio('Scratch','contact-scratch','https://scratch.mit.edu/users/ko-math','URL');
+formAddRadio('Discord','contact-discord','https://discordapp.com/users/1411260981614739456','URL');
+formAddRadio('Gmail','contact-gmail','mailto:komathtech@gmail.com','URL');
+formAddRadio('Other','contact-other','','FORM');
 
 const form = $d.querySelectorAll('#mail-form input');
 form.forEach((e)=>{
   e.addEventListener('change',()=>{
     const s = $d.querySelector('#mail-address');
-    s.innerHTML = `
-      <p>お問い合わせリンク:<a href="${contactUrls[e.value]}" target="_blank">${e.value}</a></p>
-    `;
+    const con = contactUrls[e.value];
+    const ori = con.origin;
+    switch(ori){
+      case 'URL':
+        s.innerHTML = `
+          <p>お問い合わせリンク:<a href="${con.url}" target="_blank">${e.value}</a></p>
+        `;
+        break;
+      case 'FORM':
+        break;
+    }
   });
 });
-function formAddRadio(value,id,url){
-  contactUrls[value] = url;
+function formAddRadio(value,id,url,origin){
+  contactUrls[value] = {
+    url:url,
+    origin:origin,
+  };
+  
   const par = $d.querySelector('#mail-form');
   const input = $d.createElement('input');
   input.type = 'radio';
