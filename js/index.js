@@ -121,7 +121,9 @@ function formAddRadio(value,id,url,origin){
 }
 
 //LinkEx
-function addLink(url,){}
+function addLink(url){
+  fetch(url);
+}
 
 //global functions
 function YoutubeEmbed(url,w,h) {
