@@ -5,7 +5,7 @@
 }
 body{
   background-image:
-    radial-gradient(#ccc 1px, transparent 1px);
+    radial-gradient(#333333 1px, transparent 1px);
     /*
     linear-gradient(90deg, #ccc 1px, transparent 1px),
     linear-gradient(0deg, #ccc 1px, transparent 1px);
@@ -23,16 +23,16 @@ header p{
 /*main*/
 main {
   margin: 0 auto;
-  background-color: rgb(238 238 238 / 0.6);
+  background-color: rgb(17 17 17 / 0.6);
   width: 90%;
   border-radius: 10px;
-  box-shadow: 12px 12px 2px 1px #aaaaaa;
+  box-shadow: 12px 12px 2px 1px #555555;
 }
 main h1{
   margin: 0 auto;
   text-align: center;
-  background-color: #111111;
-  color: #eeeeee;
+  background-color: #eeeeee;
+  color: #111111;
   border-radius: 10px;
 }
 main h2,main h3,main p,main textarea,main input{
@@ -79,8 +79,8 @@ iframe{
 }
 /*footer*/
 footer{
-  background-color: #111111;
-  color: #eeeeee;
+  background-color: #333333;
+  color: #555555;
   width: 100%;
   height: auto;
   margin: 20px 0 0 0;
@@ -88,7 +88,7 @@ footer{
   overflow: hidden;
 }
 footer a{
-  color: #a1c1f2;
+  color: #808088;
   font-weight: 900;
   text-decoration-style: dashed;
   opacity: 1.0;
