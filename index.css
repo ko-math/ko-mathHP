@@ -5,7 +5,7 @@
 }
 body{
   background-image:
-    radial-gradient(#eee 1px, #ffffff 1px);
+    radial-gradient(#ccc 1px, #ffffff 1px);
     /*
     linear-gradient(90deg, #ccc 1px, transparent 1px),
     linear-gradient(0deg, #ccc 1px, transparent 1px);
@@ -31,7 +31,7 @@ main {
 main h1{
   margin: 0 auto;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #555555;
   color: #111111;
   border-radius: 10px;
 }
