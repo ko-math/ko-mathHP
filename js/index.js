@@ -87,11 +87,11 @@ form.forEach((e)=>{
         break;
       case 'FORM':
         s.innerHTML = `
-          <form>
+          <form id="access-browser">
             <fieldset>
               <legend>お問い合わせ(ブラウザ)</legend>
             </fieldset>
-
+            <input id="Title">
 
           </form>
         `;
