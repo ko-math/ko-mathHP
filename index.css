@@ -32,7 +32,7 @@ main h1{
   margin: 0 auto;
   text-align: center;
   background-color: #555555;
-  color: #111111;
+  color: #ffffff;
   border-radius: 10px;
 }
 main h2,main h3,main p,main textarea,main input{
@@ -80,7 +80,7 @@ iframe{
 /*footer*/
 footer{
   background-color: #333333;
-  color: #555555;
+  color: #eeeeee;
   width: 100%;
   height: auto;
   margin: 20px 0 0 0;
@@ -88,7 +88,7 @@ footer{
   overflow: hidden;
 }
 footer a{
-  color: #808088;
+  color: #1131b2;
   font-weight: 900;
   text-decoration-style: dashed;
   opacity: 1.0;
