@@ -26,7 +26,7 @@ main {
   background-color: rgb(238 238 238 / 0.6);
   width: 90%;
   border-radius: 10px;
-  box-shadow: 12px 12px 2px 1px #555555;
+  box-shadow: 12px 12px 2px 1px rgb(136 136 136 / 0.6);
 }
 main h1{
   margin: 0 auto;
@@ -45,7 +45,7 @@ main a{
   text-decoration-style: dashed;
 }
 
-main h1,main h2,main a{
+main h1,main h2,main h3,main a{
   opacity: 0.6;
 }
 
