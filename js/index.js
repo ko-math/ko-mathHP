@@ -10,8 +10,9 @@ import { musics } from '/js/music.js'; //musics
     lastModified: ${lastModified.getFullYear()}-${lastModified.getMonth() + 1}-${lastModified.getDate()}
   `;
 })();
-
+//HTMLbutton
 const HTMLbutton = $d.querySelector('#js-HTML-b');
+  $d.querySelector('#js-HTML-o').srcdoc = document.documentElement.outerHTML;
 HTMLbutton.addEventListener('click',()=>{
   const HTMLInp = $d.querySelector('#js-HTML-i').value;
   $d.querySelector('#js-HTML-o').srcdoc = HTMLInp;
