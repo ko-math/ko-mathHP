@@ -27,7 +27,11 @@ musicb.addEventListener('click',()=>{
   iframe.id = 'js-music-iframe';
   o.append(iframe);
   const p = $d.querySelector('#js-music-desc');
-  p.textContent = `曲名:${music.title}/${music.singer} ジャンル:${music.genre}`;
+  p.innerHTML = `
+    <p>曲名:${music.title}/${music.singer} ジャンル:${music.genre}</p>
+    <i>『${music.highlight}』</i>
+    <p>コメント:<br>${music.comment}</p>
+  `;
 });
 //hobby quizes
 const Flags = {
