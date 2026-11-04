@@ -68,7 +68,7 @@ li::before{
   transform: rotate(90deg);
 }
 
-#js-HTML-i{
+#js-HTML-i,#js-HTML-o{
   margin: 20px;
   width: 70vw;
   height: 200px;
