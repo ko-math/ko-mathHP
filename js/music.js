@@ -49,7 +49,9 @@ addMusic('High Hopes','Panic! at the Disco','洋楽','');
 //addMusic('Life goes on','','洋楽','');
 
 //Hololive
-addMusic('ソワレ','星街すいせい','Hololive','');
+addMusic('ソワレ','星街すいせい','Hololive','','ソワレ　今だ！',`
+  大好きです。
+`);
 addMusic('ビビデバ','星街すいせい','Hololive','');
 //addMusic('GUM&DROP','星街すいせい','Hololive','');
 //addMusic('Caramel Pain','星街すいせい','Hololive','');
