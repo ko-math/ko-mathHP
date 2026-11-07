@@ -31,7 +31,7 @@ musicb.addEventListener('click',()=>{
   const p = $d.querySelector('#js-music-desc');
   p.innerHTML = `
     <p>曲名:${music.title}/${music.singer} ジャンル:${music.genre}</p>
-    <h3><i>『${music.highlight}』</i></h3>
+    <h3>『${music.highlight}』</h3>
     <p>コメント:<br>${music.comment}</p>
   `;
 });
