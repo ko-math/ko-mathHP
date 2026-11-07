@@ -12,7 +12,7 @@ import { musics } from '/js/music.js'; //musics
 })();
 //HTMLbutton
 const HTMLbutton = $d.querySelector('#js-HTML-b');
-$d.querySelector('#js-HTML-i').value = $d.querySelector('#js-HTML-o').srcdoc = localStorage.getItem('iframe') ?? document.documentElement.outerHTML;
+$d.querySelector('#js-HTML-i').value = $d.querySelector('#js-HTML-o').srcdoc = 'a';//localStorage.getItem('iframe') ?? document.documentElement.outerHTML;
 HTMLbutton.addEventListener('click',()=>{
   localStorage.setItem('iframe',HTMLinp);
   window.alert(localStorage.getItem('iframe'));
