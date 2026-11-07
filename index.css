@@ -77,6 +77,10 @@ li::before{
 iframe{
   opacity: 1.0;
 }
+
+#js-music-desc h3{
+  font-style: italic;
+}
 /*footer*/
 footer{
   background-color: #333333;
