@@ -1,5 +1,4 @@
 const $d = document; //$付きはjs標準オブジェクト
-const mineHTML = $d.documentElement.outerHTML;
 //import
 import { musics } from '/js/music.js'; //musics
 
@@ -13,7 +12,7 @@ import { musics } from '/js/music.js'; //musics
 })();
 //HTMLbutton
 const HTMLbutton = $d.querySelector('#js-HTML-b');
-$d.querySelector('#js-HTML-i').value = $d.querySelector('#js-HTML-o').srcdoc = localStorage.getItem('iframe') ?? mineHTML;
+$d.querySelector('#js-HTML-i').value = $d.querySelector('#js-HTML-o').srcdoc = localStorage.getItem('iframe') ?? document.documentElement.outerHTML;
 HTMLbutton.addEventListener('click',()=>{
   localStorage.setItem('iframe',HTMLinp);
   const HTMLInp = $d.querySelector('#js-HTML-i').value;
