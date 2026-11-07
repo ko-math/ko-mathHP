@@ -13,7 +13,7 @@ import { musics } from '/js/music.js'; //musics
 })();
 //HTMLbutton
 const HTMLbutton = $d.querySelector('#js-HTML-b');
-$d.querySelector('#js-HTML-i').value = $d.querySelector('#js-HTML-o').srcdoc = localStorage.getItem('iframe')??mineHTML;
+$d.querySelector('#js-HTML-i').value = $d.querySelector('#js-HTML-o').srcdoc = localStorage.getItem('iframe') ?? mineHTML;
 HTMLbutton.addEventListener('click',()=>{
   localStorage.setItem('iframe',HTMLinp);
   const HTMLInp = $d.querySelector('#js-HTML-i').value;
