@@ -131,7 +131,7 @@ async function addLink(url){
   const res = await fetch(url);
   const html = await res.text();
 }
-
+addLink('https://drsb.f5.si');
 //global functions
 function YoutubeEmbed(url,w,h) {
   const iframe = document.createElement('iframe');
