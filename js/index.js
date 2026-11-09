@@ -127,11 +127,30 @@ function formAddRadio(value,id,url,origin){
 }
 
 //LinkEx
-async function addLink(url){
+const Link = [
+  //drsb.f5.si
+  'drsb.f5.si',
+  'CSSが凄すぎます。絶対見るべきです。',
+  //hidekatsu
+];
+
+for(let i = 0;i < Link.length;i += 2){
+  let html;
+  try{
+    getLink(Link[i]).then(e=>{
+      html = e;
+    });
+  } catch(e){
+    html = null;
+  }
+  
+}
+
+async function getLink(url){
   const res = await fetch(url);
   const html = await res.text();
+  return html;
 }
-addLink('https://drsb.f5.si');
 //global functions
 function YoutubeEmbed(url,w,h) {
   const iframe = document.createElement('iframe');
