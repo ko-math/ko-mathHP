@@ -144,6 +144,7 @@ function formAddRadio(value,id,url,origin){
       });
     } catch(e){
       html = null;
+      alert(e.message);
     }
     const el = $d.createElement('div'); 
     const d = parser.parseFromString(html, 'text/html');
