@@ -127,30 +127,37 @@ function formAddRadio(value,id,url,origin){
 }
 
 //LinkEx
-const Link = [
-  //drsb.f5.si
-  'drsb.f5.si',
-  'CSSが凄すぎます。絶対見るべきです。',
-  //hidekatsu
-];
-
-for(let i = 0;i < Link.length;i += 2){
-  let html;
-  try{
-    getLink(Link[i]).then(e=>{
-      html = e;
-    });
-  } catch(e){
-    html = null;
+(()=>{
+  const Link = [
+    //drsb.f5.si
+    'drsb.f5.si',
+    'CSSが凄すぎます。絶対見るべきです。',
+    //hidekatsu
+  ];
+  
+  for(let i = 0;i < Link.length;i += 2){
+    let html;
+    try{
+      getLink(Link[i]).then(e=>{
+        html = e;
+      });
+    } catch(e){
+      html = null;
+    }
+    const el = $d.createElement('div');
+    el.innerHTML = `
+      <a href="${Link[i]}">${html.head.title}</a>
+      <p>${Link[i + 1]}</p>
+    `;
+    $d.querySelector('LinkEx-LinkArea').append(el); 
   }
   
-}
-
-async function getLink(url){
-  const res = await fetch(url);
-  const html = await res.text();
-  return html;
-}
+  async function getLink(url){
+    const res = await fetch(url);
+    const html = await res.text();
+    return html;
+  }
+})();
 //global functions
 function YoutubeEmbed(url,w,h) {
   const iframe = document.createElement('iframe');
