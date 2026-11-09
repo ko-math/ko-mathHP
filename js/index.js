@@ -16,7 +16,6 @@ $d.querySelector('#js-HTML-i').value = $d.querySelector('#js-HTML-o').srcdoc = l
 HTMLbutton.addEventListener('click',()=>{
   const HTMLInp = $d.querySelector('#js-HTML-i').value;
   localStorage.setItem('iframe',HTMLInp);
-  window.alert(localStorage.getItem('iframe'));
   $d.querySelector('#js-HTML-o').srcdoc = HTMLInp;
 });
 //music
