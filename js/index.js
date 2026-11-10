@@ -8,7 +8,7 @@ import { musics } from '/js/music.js'; //musics
   const e = $d.querySelector('#lastVisited');
   const date = new Date();
   const lastVisited = localStorage.getItem('lastVisited') ?? 0;
-  const ms = date - lastVisited;
+  const ms = date - new Date(lastVisited);
   const lastVisitedDate = new Date(lastVisited);
   if(lastVisited){
     e.innerHTML = `
