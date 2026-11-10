@@ -142,7 +142,7 @@ function formAddRadio(value,id,url,origin){
         html = e;
       });
     } catch(e){
-      html = null;
+      html = '<title>1</title>';
       alert(e.message);
     }
     const el = $d.createElement('div'); 
