@@ -5,11 +5,15 @@ import { musics } from '/js/music.js'; //musics
 
 //lastVisited
 (()=>{
+  const e = $d.querySelector('#lastVisited');
   const date = new Date();
   const lastVisited = localStorage.getItem('lastVisited');
   const ms = date - lastVisited;
-  const e = $d.querySelector('#lastVisited');
-  e.textContent = `あなたの最終閲覧日:`;
+  const lastVisitedDate = new Date(lastVisited);
+  e.innerHTML = `
+    <small>あなたの最終閲覧日:${lastVisitedDate.toLocaleString()}</small>
+    <small>前の閲覧から${ms / (1000 * 60 * 60 * 24) + 1}日経ってるよ？</small>
+  `;
   localStorage.setItem('lastVisited',date);
 })();
 
