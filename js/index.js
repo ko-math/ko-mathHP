@@ -152,7 +152,7 @@ function formAddRadio(value,id,url,origin){
       <a href="${Link[i]}">${d.title}</a>
       <p>${Link[i + 1]}</p>
     `;
-    $d.querySelector('LinkEx-LinkArea').append(el); 
+    $d.querySelector('#LinkEx-LinkArea').append(el); 
   }
   
   async function getLink(url){
