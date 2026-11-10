@@ -145,7 +145,7 @@ function formAddRadio(value,id,url,origin){
 }
 
 //LinkEx
-(()=>{
+(async ()=>{
   const parser = new DOMParser();
   const Link = [
     //drsb.f5.si
@@ -156,7 +156,7 @@ function formAddRadio(value,id,url,origin){
     //hidekatsu
   ];
   
-  for(let obj in Link){
+  for(const obj of Link){
     try{
       const res = await fetch(obj.url);
       if(!res.ok){
