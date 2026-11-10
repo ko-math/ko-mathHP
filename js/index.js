@@ -150,8 +150,8 @@ function formAddRadio(value,id,url,origin){
       
       const el = $d.createElement('div'); 
       el.innerHTML = `
-        <a href="${Link[i]}">${html.title}</a>
-        <p>${Link[i + 1]}</p>
+        <a href="${obj.url}">${html.title}</a>
+        <p>${obj.desc}</p>
       `;
       $d.querySelector('#LinkEx-LinkArea').append(el); 
     } catch(e){
