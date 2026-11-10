@@ -18,7 +18,6 @@ import { musics } from '/js/music.js'; //musics
   } else {
     e.innerHTML = `
       <small>来てくれてありがとう！</small><br>
-      <small>前の閲覧から${Math.floor(ms / (1000 * 60 * 60 * 24)) + 1}日経ってるよ？</small>
     `;
   }
   localStorage.setItem('lastVisited',date);
