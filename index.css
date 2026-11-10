@@ -37,7 +37,7 @@ main h1{
   color: #ffffff;
   border-radius: 10px;
 }
-main h2,main h3,main p,main textarea,main input,main small{
+main h2,main h3,main p,main textarea,main input,main a,main small{
   margin: auto 10px;
 }
 
