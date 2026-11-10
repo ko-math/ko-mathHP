@@ -12,10 +12,12 @@ import { musics } from '/js/music.js'; //musics
   const lastVisitedDate = new Date(lastVisited);
   const d = ms / (1000 * 60 * 60 * 24);
   const h = (d - Math.floor(d)) * 24;
+  const mi = (h - Math.floor(h)) * 60;
+  const s = (mi - Math.floor(mi)) * 60;
   if(lastVisited){
     e.innerHTML = `
       <small>あなたの最終閲覧日:${lastVisitedDate.toLocaleString('ja-JP')}</small><br>
-      <small>前の閲覧から${Math.floor(d)}日${Math.floor(h)}時間も経ってるよ？</small>
+      <small>前の閲覧から${Math.floor(d)}日${Math.floor(h)}時間${Math.floor(mi)}分${Math.floor(s)}秒も経ってるよ？</small>
     `; 
   } else {
     e.innerHTML = `
