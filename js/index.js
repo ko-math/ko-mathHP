@@ -154,7 +154,7 @@ function formAddRadio(value,id,url,origin){
   const Link = [
     //drsb.f5.si
     {
-      url: 'drsb.f5.si',
+      url: 'https://drsb.f5.si',
       desc: 'CSSが凄すぎます。絶対見るべきです。'
     },
     //hidekatsu
