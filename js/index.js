@@ -131,32 +131,32 @@ function formAddRadio(value,id,url,origin){
   const parser = new DOMParser();
   const Link = [
     //drsb.f5.si
-    'drsb.f5.si',
-    'CSSが凄すぎます。絶対見るべきです。',
+    {
+      url: 'drsb.f5.si',
+      desc: 'CSSが凄すぎます。絶対見るべきです。'
+    },
     //hidekatsu
   ];
   
-  for(let i = 0;i < Link.length;i += 2){
-    let html;
+  for(let obj in Link){
     try{
-      getLink(Link[i]).then(res =>{
-        if(!res.ok){
-          window.alert(res.status);
-        }
-        return res.text();
-      }).then(e => {
-        html = parser.parseFromString(e, 'text/html');
-      });
+      const res = await fetch(obj.url);
+      if(!res.ok){
+        window.alert(`Error:${res.status}`);
+        continue;
+      }
+      const text = await res.text();
+      const html = parser.parseFromString(text, 'text/html');
+      
+      const el = $d.createElement('div'); 
+      el.innerHTML = `
+        <a href="${Link[i]}">${html.title}</a>
+        <p>${Link[i + 1]}</p>
+      `;
+      $d.querySelector('#LinkEx-LinkArea').append(el); 
     } catch(e){
-      html = '<title>1</title>';
-      alert(e.message);
+      window.alert(e.message);
     }
-    const el = $d.createElement('div'); 
-    el.innerHTML = `
-      <a href="${Link[i]}">${html.title}</a>
-      <p>${Link[i + 1]}</p>
-    `;
-    $d.querySelector('#LinkEx-LinkArea').append(el); 
   }
   
   async function getLink(url){
