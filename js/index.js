@@ -13,7 +13,7 @@ import { musics } from '/js/music.js'; //musics
   if(lastVisited){
     e.innerHTML = `
       <small>あなたの最終閲覧日:${lastVisitedDate.toLocaleString('ja-JP')}</small><br>
-      <small>前の閲覧から${Math.floor(ms / (1000 * 60 * 60 * 24)) + 1}日経ってるよ？</small>
+      <small>前の閲覧から${Math.floor(ms / (1000 * 60 * 60 * 24))}日経ってるよ？</small>
     `; 
   } else {
     e.innerHTML = `
