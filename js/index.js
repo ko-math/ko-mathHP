@@ -128,7 +128,6 @@ function formAddRadio(value,id,url,origin){
 
 //LinkEx
 (()=>{
-  const parser = new DOMParser();
   const Link = [
     //drsb.f5.si
     'drsb.f5.si',
@@ -147,6 +146,7 @@ function formAddRadio(value,id,url,origin){
       alert(e.message);
     }
     const el = $d.createElement('div'); 
+    const parser = new DOMParser();
     const d = parser.parseFromString(html, 'text/html');
     el.innerHTML = `
       <a href="${Link[i]}">${d.title}</a>
