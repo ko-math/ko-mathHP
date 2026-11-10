@@ -19,7 +19,7 @@ body{
 header p{
   font-size: 5vw;
 }
-header p,header small{
+header p,#lastVisited{
   text-align: center;
 }
 /*main*/
