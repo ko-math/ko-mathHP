@@ -16,8 +16,10 @@ body{
   padding: 0;
 }
 /*header*/
-header p,header small{
+header p{
   font-size: 5vw;
+}
+header p,header small{
   text-align: center;
 }
 /*main*/
