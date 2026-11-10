@@ -5,8 +5,12 @@ import { musics } from '/js/music.js'; //musics
 
 //lastVisited
 (()=>{
-  const d = new Date();
-  localStorage.setItem('lastVisited',d);
+  const date = new Date();
+  const lastVisited = localStorage.getItem('lastVisited');
+  const ms = date - lastVisited;
+  const e = $d.querySelector('#lastVisited');
+  e.textContent = `あなたの最終閲覧日:`;
+  localStorage.setItem('lastVisited',date);
 })();
 
 //lastModified
