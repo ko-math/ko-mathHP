@@ -7,13 +7,20 @@ import { musics } from '/js/music.js'; //musics
 (()=>{
   const e = $d.querySelector('#lastVisited');
   const date = new Date();
-  const lastVisited = localStorage.getItem('lastVisited');
+  const lastVisited = localStorage.getItem('lastVisited') ?? 0;
   const ms = date - lastVisited;
   const lastVisitedDate = new Date(lastVisited);
-  e.innerHTML = `
-    <small>あなたの最終閲覧日:${lastVisitedDate.toLocaleString('ja-JP')}</small>
-    <small>前の閲覧から${Math.floor(ms / (1000 * 60 * 60 * 24)) + 1}日経ってるよ？</small>
-  `;
+  if(lastVisited){
+    e.innerHTML = `
+      <small>あなたの最終閲覧日:${lastVisitedDate.toLocaleString('ja-JP')}</small><br>
+      <small>前の閲覧から${Math.floor(ms / (1000 * 60 * 60 * 24)) + 1}日経ってるよ？</small>
+    `; 
+  } else {
+    e.innerHTML = `
+      <small>来てくれてありがとう！</small><br>
+      <small>前の閲覧から${Math.floor(ms / (1000 * 60 * 60 * 24)) + 1}日経ってるよ？</small>
+    `;
+  }
   localStorage.setItem('lastVisited',date);
 })();
 
