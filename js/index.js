@@ -53,31 +53,29 @@ musicb.addEventListener('click',()=>{
 });
 
 //hobby quizes
-(()=>{
-  const Flags = {
-    hobbyQuiz0: true,
-  };
-  const encryptedDataHex = '990bc3d7ea3fb09f773e61cfbeb3f2d9023c897f853a82d9aac12881373b42128349f9e7a094f4b5aa3278b49342959e1806104f827a254fd9ad01a10eaeb8';
-  const ivHex = '9db1d618170cfb922b37410d';
-  
-  const hexToBytes = hex => new Uint8Array(hex.match(/.{1,2}/g).map(b => parseInt(b, 16)));
-  async function decrypt(input) {
-    try {
-      const encoder = new TextEncoder();
-      const keyMaterial = await crypto.subtle.digest('SHA-256', encoder.encode(input));
-      const key = await crypto.subtle.importKey('raw', keyMaterial, { name: 'AES-GCM' }, false, ['decrypt']);
-      const decryptedBuffer = await crypto.subtle.decrypt(
-        { name: 'AES-GCM', iv: hexToBytes(ivHex) },
-        key,
-        hexToBytes(encryptedDataHex)
-      );
-  
-      return new TextDecoder().decode(decryptedBuffer);
-    } catch (e) {
-      return null;
-    }
+const Flags = {
+  hobbyQuiz0: true,
+};
+const encryptedDataHex = '990bc3d7ea3fb09f773e61cfbeb3f2d9023c897f853a82d9aac12881373b42128349f9e7a094f4b5aa3278b49342959e1806104f827a254fd9ad01a10eaeb8';
+const ivHex = '9db1d618170cfb922b37410d';
+
+const hexToBytes = hex => new Uint8Array(hex.match(/.{1,2}/g).map(b => parseInt(b, 16)));
+async function decrypt(input) {
+  try {
+    const encoder = new TextEncoder();
+    const keyMaterial = await crypto.subtle.digest('SHA-256', encoder.encode(input));
+    const key = await crypto.subtle.importKey('raw', keyMaterial, { name: 'AES-GCM' }, false, ['decrypt']);
+    const decryptedBuffer = await crypto.subtle.decrypt(
+      { name: 'AES-GCM', iv: hexToBytes(ivHex) },
+      key,
+      hexToBytes(encryptedDataHex)
+    );
+
+    return new TextDecoder().decode(decryptedBuffer);
+  } catch (e) {
+    return null;
   }
-})();
+}
 const hobbyQuiz0b = $d.querySelector('#hobby-quiz-0-b');
 hobbyQuiz0b.addEventListener('click',async ()=>{
   if(Flags.hobbyQuiz0){
