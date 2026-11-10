@@ -16,7 +16,7 @@ body{
   padding: 0;
 }
 /*header*/
-header p{
+header p,header small{
   font-size: 5vw;
   text-align: center;
 }
