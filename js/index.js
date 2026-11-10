@@ -12,7 +12,7 @@ import { musics } from '/js/music.js'; //musics
   const lastVisitedDate = new Date(lastVisited);
   e.innerHTML = `
     <small>あなたの最終閲覧日:${lastVisitedDate.toLocaleString()}</small>
-    <small>前の閲覧から${ms / (1000 * 60 * 60 * 24) + 1}日経ってるよ？</small>
+    <small>前の閲覧から${Math.floor(ms / (1000 * 60 * 60 * 24)) + 1}日経ってるよ？</small>
   `;
   localStorage.setItem('lastVisited',date);
 })();
