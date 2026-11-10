@@ -128,6 +128,7 @@ function formAddRadio(value,id,url,origin){
 
 //LinkEx
 (()=>{
+  const parser = new DOMParser();
   const Link = [
     //drsb.f5.si
     'drsb.f5.si',
@@ -138,18 +139,21 @@ function formAddRadio(value,id,url,origin){
   for(let i = 0;i < Link.length;i += 2){
     let html;
     try{
-      getLink(Link[i]).then(e=>{
-        html = e;
+      getLink(Link[i]).then(res =>{
+        if(!res.ok){
+          window.alert(res.status);
+        }
+        return res.text();
+      }).then(e => {
+        html = parser.parseFromString(e, 'text/html');
       });
     } catch(e){
       html = '<title>1</title>';
       alert(e.message);
     }
     const el = $d.createElement('div'); 
-    const parser = new DOMParser();
-    const d = parser.parseFromString(html, 'text/html');
     el.innerHTML = `
-      <a href="${Link[i]}">${d.title}</a>
+      <a href="${Link[i]}">${html.title}</a>
       <p>${Link[i + 1]}</p>
     `;
     $d.querySelector('#LinkEx-LinkArea').append(el); 
