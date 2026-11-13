@@ -70,7 +70,7 @@ li::before{
   transform: rotate(90deg);
 }
 
-#js-HTML-i,#js-HTML-o{
+#js-HTML-i{
   margin: 20px;
   width: 70vw;
   height: 200px;
