@@ -75,9 +75,13 @@ li::before{
   width: 70vw;
   height: 200px;
 }
-
+/*iframe*/
 iframe{
   opacity: 1.0;
+}
+.resize{
+  width: 600px;
+  height: 400px;
 }
 
 #js-music-desc h3{
