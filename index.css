@@ -103,3 +103,6 @@ footer a{
   text-decoration-style: dashed;
   opacity: 1.0;
 }
+footer a,footer p{
+  margin: auto 10px;
+}
