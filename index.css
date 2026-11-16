@@ -42,6 +42,7 @@ main h2,main h3,main p,main textarea,main input,#LinkEx-LinkArea a,main small{
 }
 
 main a{
+  filter: brightness(0.5);
   color: #00b2bf;
   font-weight: 900;
   text-decoration-style: dashed;
