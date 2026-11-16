@@ -79,7 +79,8 @@ li::before{
 iframe{
   opacity: 1.0;
 }
-.resize{
+.resize, #js-HTML-o{
+  margin: 20px;
   width: 600px;
   height: 400px;
 }
